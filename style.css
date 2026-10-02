@@ -9,3 +9,11 @@ h1
     border: 1px solid red;
     border-radius: 50%;
 }
+.background-image
+{
+    background-image: url("image/backround.avif");
+}
+.background-image
+{
+    background-image: linear-gradient();
+}
