@@ -26,6 +26,14 @@ body
     bottom: 2em;
     left: 2em;
     position: fixed;
+
+    animation: bobbing 1s ease-in-out infinite alternate
+}
+
+@keyframes bobbing
+{
+    from { transform: transalteY(0); }
+    to { transform: transalteY(-10px);}
 }
 .background-image
 {
