@@ -21,19 +21,24 @@ body
     border-radius: 50%;
 }
 
+.face-right
+{
+    scale: -1 1;
+}
+
 #avatar
 {
     bottom: 2em;
     left: 2em;
     position: fixed;
 
-    animation: bobbing 1s ease-in-out infinite alternate
+    animation: bobbing 1s ease-in-out infinite alternate;
 }
 
 @keyframes bobbing
 {
-    from { transform: transalteY(0); }
-    to { transform: transalteY(-10px);}
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px);}
 }
 .background-image
 {
