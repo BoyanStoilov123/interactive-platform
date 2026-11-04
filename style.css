@@ -1,4 +1,5 @@
-h1
+
+h2
 {
     color: red;
 }
@@ -12,7 +13,6 @@ body
 {
     margin: 0;
     padding: 0;
-    height: 300vh;
 }
 .circle-border
 {
@@ -40,11 +40,16 @@ body
     from { transform: translateY(0); }
     to { transform: translateY(-10px);}
 }
-.background-image
+
+main
 {
-    background-image: url("image/backround.avif");
+    display: flex;
 }
-.background-image
+
+section
 {
-    background-image: linear-gradient();
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
 }

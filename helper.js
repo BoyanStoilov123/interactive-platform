@@ -4,10 +4,10 @@ var pastProgress = 0
 
 document.addEventListener("scroll", (event) =>
 {
-    var positionY = window.scrollY;
-    var maxHeight = root.scrollHeight - window.innerHeight;
+    var positionX = window.scrollX;
+    var screenWidth = root.scrollWidth - window.innerWidth;
     var maxWidth = window.innerWidth - avatar.offsetWidth;
-    var progress = (positionY / maxHeight) * maxWidth;
+    var progress = (positionX / screenWidth) * maxWidth;
 
     if (progress < pastProgress)
         avatar.classList.add("face-right");
@@ -17,4 +17,16 @@ document.addEventListener("scroll", (event) =>
     avatar.style.left = progress + "px";
 
     pastProgress = progress;
+});
+
+document.addEventListener("keydown", (event) =>
+{
+    if ((event.key === "ArrowLeft") || (event.key === "ArrowUp"))
+    {
+        console.log("Go left");
+    }
+    if ((event.key === "ArrowRight") || (event.key === "ArrowDown"))
+    {
+        console.log("Go right");
+    }
 });
