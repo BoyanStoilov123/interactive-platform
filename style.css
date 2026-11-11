@@ -13,6 +13,12 @@ body
 {
     margin: 0;
     padding: 0;
+    background-image:
+        url("image\\Fantasy Village Asset Set.png"),
+        url("image\\Snow-Capped Mountain Landscape with Pine Hills.png");
+    background-repeat: repeat-x;
+    background-size: auto 100vh;
+    background-attachment: fixed;
 }
 .circle-border
 {

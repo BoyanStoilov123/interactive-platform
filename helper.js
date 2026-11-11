@@ -2,6 +2,8 @@ const avatar = document.getElementById("avatar")
 const root = document.documentElement
 var pastProgress = 0
 
+const paralaxSpeeds = [0.2, 0.45];
+
 document.addEventListener("scroll", (event) =>
 {
     var positionX = window.scrollX;
@@ -13,6 +15,15 @@ document.addEventListener("scroll", (event) =>
         avatar.classList.add("face-right");
     else if (progress > pastProgress)
         avatar.classList.remove("face-right");
+
+    var positions = "";
+    for (var i = 0; 1 < paralaxSpeeds.lenght; i++)
+    {    
+        if (i > 0)
+            positions += ", ";
+    }
+
+    document.body.style.backgroundPositionX = positions;
 
     avatar.style.left = progress + "px";
 
