@@ -2,7 +2,7 @@ const avatar = document.getElementById("avatar")
 const root = document.documentElement
 var pastProgress = 0
 
-const paralaxSpeeds = [0.2, 0.45];
+const paralaxSpeeds = [0.2, 0.2, 0.5];
 
 document.addEventListener("scroll", (event) =>
 {
@@ -17,10 +17,12 @@ document.addEventListener("scroll", (event) =>
         avatar.classList.remove("face-right");
 
     var positions = "";
-    for (var i = 0; 1 < paralaxSpeeds.lenght; i++)
+    for (var i = 0; i < paralaxSpeeds.length; i++)
     {    
         if (i > 0)
             positions += ", ";
+
+        positions += positionX * paralaxSpeeds[i] + "px";
     }
 
     document.body.style.backgroundPositionX = positions;

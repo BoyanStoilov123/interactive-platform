@@ -15,7 +15,9 @@ body
     padding: 0;
     background-image:
         url("image\\Fantasy Village Asset Set.png"),
-        url("image\\Snow-Capped Mountain Landscape with Pine Hills.png");
+        url("image\\Snow-Capped Mountain Landscape with Pine Hills.png"),
+        url("image\\Stars.png");
+    
     background-repeat: repeat-x;
     background-size: auto 100vh;
     background-attachment: fixed;
