@@ -22,7 +22,7 @@ document.addEventListener("scroll", (event) =>
         if (i > 0)
             positions += ", ";
 
-        positions += positionX * paralaxSpeeds[i] + "px";
+        positions += -positionX * paralaxSpeeds[i] + "px";
     }
 
     document.body.style.backgroundPositionX = positions;
