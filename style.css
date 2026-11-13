@@ -65,11 +65,18 @@ section
 
 #about-me .section-content
 {
-    background-image: url("image\\Horizontal Text box.png");
-    background-size: cover;
-    width: 50%;
-    height: 20%;
+    background: url("image/Vertical text box.png") center / 100% 100% no-repeat;  
+    aspect-ratio: 16 / 9;
+    width: 55%;
+    height: 90%;
     position: relative;
     left: 20%;
     top: 20%;
+}
+
+#about-me .section-content h2
+{
+    position: relative;
+    top: 10%;
+    text-align: center;
 }
