@@ -63,20 +63,28 @@ section
     flex-shrink: 0;
 }
 
-#about-me .section-content
+#about-me
 {
-    background: url("image/Vertical text box.png") center / 100% 100% no-repeat;  
-    aspect-ratio: 16 / 9;
-    width: 55%;
-    height: 90%;
-    position: relative;
-    left: 20%;
-    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#about-me .section-content h2
+#about-me .section-content
 {
+    display: flex;
+    flex-direction: column;
+    background: url("image/Vertical text box.png") center / 100% 100% no-repeat;  
+    width: 20%;
+    height: auto;
     position: relative;
-    top: 10%;
-    text-align: center;
+    padding: 8% 14%;
+    text-align: center ;
 }
+
+#about-me
+{
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
